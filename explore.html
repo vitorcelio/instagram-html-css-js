@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/explorer.css">
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body onmouseover="removeHiddenIcon()">
+    <header class="menu">
+        <a class="foto" href=""><i class="bi bi-camera"></i></i></a>
+        <img class="img-menu" src="img/instagram-logo.png" alt="logo do instagram">
+        <a class="messenger" href=""><i class="bi bi-chat-dots"></i></a>
+        <div class="input-menu">
+            <div class="input-grupo">
+                <i id="icone-pesquisa" class="bi bi-search"></i>
+                <input type="text" placeholder="Pesquisar" id="pesquisar">
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <ul class="itens-menu">
+                <li><a href="pagina-inicial.html"><i id="house" class="bi bi-house-door"></i></a></li>
+                <li><a href="direct.html"><i id="chat" class="bi bi-chat-dots"></i></a></li>
+                <li>
+                    <a href="#" id="publicar">
+                        <i id="postar" class="bi bi-plus-square"></i>
+                    </a>
+                    <div id="modal-publicar" class="modal-publicar hidden-dropdown">
+                        <i id="fechar-modal-publicar" class="bi bi-x-lg"></i>
+                        <div>
+                            <div class="publicar-header">
+                                <p>Criar nova publicação</p>
+                            </div>
+                            <div class="publicar-body">
+                                <i class="bi bi-images"></i>
+                                <h1>Arraste as fotos e os vídeos aqui</h1>
+                                <label for="selecionar">Selecionar do coomputador</label>
+                                <input type="file" name="" id="selecionar" title="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="explore.html"><i id="explore" class="bi bi-compass-fill"></i></a></li>
+                <li>
+                    <a href="#" id="notificacao">
+                        <i id="heart" class="bi bi-heart"></i>
+                    </a>
+                    <div id="notificacoes" class="notificacoes hidden-dropdown">
+                        <div class="notificacao-semana">
+                            <p>Hoje</p>
+                            <div>
+                                <div class="notificacao">
+                                    <div>
+                                        <img class="img-notificacao story-normal" src="https://github.com/vitorcelio.png" alt=""
+                                            width="50">
+                                        <p>
+                                            <span>vitucelio</span>
+                                            <span>começou a seguir você.</span>
+                                            <span>22h</span>
+                                        </p>
+                                    </div>
+                                    <button class="seguir">Seguir</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notificacao-semana">
+                            <p>Semana passada</p>
+                            <div>
+                                <div class="notificacao">
+                                    <div>
+                                        <img class="img-notificacao story-normal" src="https://github.com/vitorcelio.png" alt=""
+                                            width="50">
+                                        <p>
+                                            <span>vitucelio</span>
+                                            <span>mencionou você em um comentário: te liga aí, mano, aprende teu java logo</span>
+                                            <span>3 d</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="https://github.com/vitorcelio.png" alt="" width="60">
+                                    </div>
+                                </div>
+                                <div class="notificacao">
+                                    <div>
+                                        <img class="img-notificacao story-normal" src="https://github.com/vitorcelio.png" alt=""
+                                            width="50">
+                                        <p>
+                                            <span>vitucelio</span>
+                                            <span>curtiu o seu comentário: Melhor linguagem é Java!</span>
+                                            <span>5 d</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="https://github.com/vitorcelio.png" alt="" width="60">
+                                    </div>
+                                </div>
+                                <div class="notificacao">
+                                    <div>
+                                        <img class="img-notificacao story-normal" src="https://github.com/vitorcelio.png" alt=""
+                                            width="50">
+                                        <p>
+                                            <span>vitucelio</span>
+                                            <span>começou a seguir você.</span>
+                                            <span>1 sem</span>
+                                        </p>
+                                    </div>
+                                    <button class="seguir">Seguir</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a id="profile">
+                        <img id="img-profile" src="https://github.com/vitorcelio.png" alt="vitucelio" width="25">
+                    </a>
+                    <div class="body-dropdown hidden-dropdown">
+                        <ul class="dropdown-perfil">
+                            <li><a href="profile.html"><i class="bi bi-person-circle"></i> Perfil</a></li>
+                            <li><a href=""><i class="bi bi-bookmark"></i> Salvos</a></li>
+                            <li><a href=""><i class="bi bi-gear-wide"></i> Configurações</a></li>
+                            <li><a href=""><i class="bi bi-arrow-repeat"></i> Trocar de conta</a></li>
+                            <li><a href="index.html">Sair</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main onmouseover="removeHidden()">
+        <section class="principal">
+            <a href="" class="video-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+            <a href="" class="foto-post">
+                <img src="https://github.com/vitorcelio.png" alt="">
+            </a>
+        </section>
+    </main>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
